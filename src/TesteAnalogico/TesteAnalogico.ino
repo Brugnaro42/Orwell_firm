@@ -34,26 +34,26 @@ void loop(){
   }
 
   
-//   if (analogRead(eixo_X) == 0){
-//     Serial.println("ESQUERDA"); //IMPRIME O TEXTO NO MONITOR SERIAL;
-//   }
-//   else if (analogRead(eixo_X) == 1023){
-//     Serial.println("DIREITA"); //IMPRIME O TEXTO NO MONITOR SERIAL;
-//   }
-//   else if (analogRead(eixo_Y) == 0){
-//     Serial.println("BAIXO"); //IMPRIME O TEXTO NO MONITOR SERIAL;
-//   }
-//   else if (analogRead(eixo_Y) == 1023){
-//     Serial.println("CIMA"); //IMPRIME O TEXTO NO MONITOR SERIAL;
-//   }
-//   else if(digitalRead(botao) == LOW){ //SE LEITURA FOR IGUAL A HIGH, FAZ
-//     Serial.println("BOTAO PRESSIONADO"); //IMPRIME O TEXTO NO MONITOR SERIAL
-//   }  
-//   else{
-//     Serial.print(analogRead(eixo_X)); //IMPRIME O TEXTO NO MONITOR SERIAL;
-//     Serial.print(" - "); //IMPRIME O TEXTO NO MONITOR SERIAL;
-//     Serial.println(analogRead(eixo_Y)); //IMPRIME O TEXTO NO MONITOR SERIAL;
-//   }
-//
-//    delay(500); //INTERVALO DE 500 MILISSEGUNDOS
+   if (analogRead(eixo_X) == 0){
+     Serial.println("ESQUERDA"); //IMPRIME O TEXTO NO MONITOR SERIAL;
+   }
+   else if (analogRead(eixo_X) == 1023){
+     Serial.println("DIREITA"); //IMPRIME O TEXTO NO MONITOR SERIAL;
+   }
+   else if (analogRead(eixo_Y) == 0){
+     Serial.println("BAIXO"); //IMPRIME O TEXTO NO MONITOR SERIAL;
+   }
+   else if (analogRead(eixo_Y) == 1023){
+     Serial.println("CIMA"); //IMPRIME O TEXTO NO MONITOR SERIAL;
+   }
+   else if(digitalRead(botao) == LOW){ //SE LEITURA FOR IGUAL A HIGH, FAZ
+     Serial.println("BOTAO PRESSIONADO"); //IMPRIME O TEXTO NO MONITOR SERIAL
+   }  
+   else{
+     Serial.print(analogRead(eixo_X)); //IMPRIME O TEXTO NO MONITOR SERIAL;
+     Serial.print(" - "); //IMPRIME O TEXTO NO MONITOR SERIAL;
+     Serial.println(analogRead(eixo_Y)); //IMPRIME O TEXTO NO MONITOR SERIAL;
+   }
+
+    delay(500); //INTERVALO DE 500 MILISSEGUNDOS
 }
