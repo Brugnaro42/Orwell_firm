@@ -1,8 +1,8 @@
 #include <Servo.h>
 
-int eixo_X= A0; //PINO REFERENTE A LIGAÇÃO DO EIXO X
-int eixo_Y = A1; //PINO REFERENTE A LIGAÇÃO DO EIXO Y
-int botao = 2; //PINO REFERENTE A LIGAÇÃO NO PINO KEY (EIXO Z)
+int eixo_X= 21;//A0; //PINO REFERENTE A LIGAÇÃO DO EIXO X
+int eixo_Y = 22;//A1; //PINO REFERENTE A LIGAÇÃO DO EIXO Y
+int botao = 23; //PINO REFERENTE A LIGAÇÃO NO PINO KEY (EIXO Z)
 
 Servo servoX;
 Servo servoY;
@@ -11,7 +11,7 @@ int val = 0;
 
 void setup(){
   pinMode (botao, INPUT_PULLUP); //DEFINE A PORTA COMO ENTRADA / "_PULLUP" É PARA ATIVAR O RESISTOR INTERNO
-  Serial.begin (9600); //INICIALIZA O MONITOR SERIAL
+  Serial.begin (115200); //INICIALIZA O MONITOR SERIAL
 
   servoX.attach(6);
   servoY.attach(5);
